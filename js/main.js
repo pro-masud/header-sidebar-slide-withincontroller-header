@@ -7,8 +7,7 @@ const searchBtn = document.getElementById("searchbtn");
 const search = document.getElementById("search");
 const classSearch = document.querySelector(".search");
 const searchClose = document.querySelector("button.search-close");
-const msg = document.querySelector(".msg");
-const body = document.querySelector("body");
+const sidebarBtn = document.getElementById("sidebar-btn");
 
 
 // navbar toggle
@@ -21,6 +20,15 @@ button.addEventListener("click", () => {
     // }
 
     headerNav.classList.toggle("show-nav");
+});
+
+
+// sidebar remove 
+sidebarBtn.addEventListener("click", () => {
+
+    if(headerNav.classList.contains("show-nav")){
+        headerNav.classList.remove("show-nav");
+    }
 });
 
 
@@ -45,11 +53,3 @@ searchClose.addEventListener("click", () => {
         classSearch.classList.remove("showSearch");
    }
 });
-
-window.onscroll = (e) => {
-    const value = e.target.value;
-    
-    msg.innerHTML = `${value}`;
-}
-
-console.log(body.onscroll);

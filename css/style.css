@@ -1,65 +1,5 @@
 /* basic style setup */
 
-:root {
-    --heading-font-family: Rubik, sans-serif;
-    --heading-font-weight: 500;
-    --heading-font-style: normal;
-    --text-font-family: Rubik, sans-serif;
-    --text-font-weight: 400;
-    --text-font-style: normal;
-    --base-text-font-size: 16px;
-    --default-text-font-size: 14px;
-    --background: #ffffff;
-    --background-rgb: 255, 255, 255;
-    --light-background: #ffffff;
-    --light-background-rgb: 255, 255, 255;
-    --heading-color: #000000;
-    --text-color: #000000;
-    --text-color-rgb: 0, 0, 0;
-    --text-color-light: #000000;
-    --text-color-light-rgb: 0, 0, 0;
-    --link-color: #6a6a6a;
-    --link-color-rgb: 106, 106, 106;
-    --border-color: #d9d9d9;
-    --border-color-rgb: 217, 217, 217;
-    --button-background: #e50021;
-    --button-background-rgb: 229, 0, 33;
-    --button-text-color: #ffffff;
-    --header-background: #1d1d1b;
-    --header-heading-color: #ffffff;
-    --header-light-text-color: #6a6a6a;
-    --header-border-color: #3f3f3d;
-    --footer-background: #1d1d1b;
-    --footer-text-color: #ffffff;
-    --footer-heading-color: #ffffff;
-    --footer-border-color: #3f3f3d;
-    --navigation-background: #1d1d1b;
-    --navigation-background-rgb: 29, 29, 27;
-    --navigation-text-color: #ffffff;
-    --navigation-text-color-light: rgba(255, 255, 255, 0.5);
-    --navigation-border-color: rgba(255, 255, 255, 0.25);
-    --newsletter-popup-background: #000000;
-    --newsletter-popup-text-color: #ffffff;
-    --newsletter-popup-text-color-rgb: 255, 255, 255;
-    --secondary-elements-background: #000000;
-    --secondary-elements-background-rgb: 0, 0, 0;
-    --secondary-elements-text-color: #ffffff;
-    --secondary-elements-text-color-light: rgba(255, 255, 255, 0.5);
-    --secondary-elements-border-color: rgba(255, 255, 255, 0.25);
-    --product-sale-price-color: #f94c43;
-    --product-sale-price-color-rgb: 249, 76, 67;
-    --product-star-rating: #f6a429;
-    --payment-terms-background-color: #ffffff;
-    --horizontal-spacing-four-products-per-row: 20px;
-    --horizontal-spacing-two-products-per-row: 20px;
-    --vertical-spacing-four-products-per-row: 40px;
-    --vertical-spacing-two-products-per-row: 50px;
-    --drawer-transition-timing: cubic-bezier(0.645, 0.045, 0.355, 1);
-    --header-base-height: 80px;
-    --cursor-zoom-in-svg: url(//en.king-controller.de/cdn/shop/t/123/assets/cursor-zoom-in.svg?v=100326362725928540331691760190);
-    --cursor-zoom-in-2x-svg: url(//en.king-controller.de/cdn/shop/t/123/assets/cursor-zoom-in-2x.svg?v=71919207650934979201691760190);
-    }
-
 /* includeing google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -199,6 +139,11 @@ body{
     border-radius: 2px;
 }
 
+.sidebar-footer{
+    display: none;
+    margin-top: 160px;
+}
+
 
 .sub-menu{
     position: absolute;
@@ -262,6 +207,33 @@ body{
     text-transform: uppercase;
 }
 
+.sidebar-header{
+    display: none;
+}
+
+.sidebar-header .sidebar-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar-header img{
+    width: 160px;
+}
+
+.sidebar-header button{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.sidebar-header button i{
+    font-size: 22px;
+    color: #fff;
+}
 
 
 .list-cart{
