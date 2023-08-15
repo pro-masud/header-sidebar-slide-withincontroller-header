@@ -60,7 +60,9 @@
         visibility: visible;
         pointer-events: auto;
         transform: translateX(0px);
-        
+    }
+    .sub-menu{
+        display: none;
     }
 
     .sidebar-header{
